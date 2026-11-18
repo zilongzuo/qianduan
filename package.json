@@ -1,0 +1,12 @@
+{
+  "name": "delta-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "三角洲 · 游屹辰的个人博客（Cloudflare Pages）",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "preview": "node build.mjs && node preview.mjs",
+    "deploy": "node build.mjs && npx wrangler pages deploy dist --project-name=delta-blog --commit-dirty=true"
+  }
+}
